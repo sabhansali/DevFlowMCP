@@ -1,0 +1,496 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run DevFlow tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/unit",
+				"tests/integration"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Rerun DevFlow tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/unit",
+				"tests/integration"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify MCP security test",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/integration/test_mcp_stdio.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Lint DevFlow source",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run full DevFlow tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test sample project",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"sample_quality_project/tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run sample tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"sample_quality_project/tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run corrected full tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Recheck lint",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Format DevFlow source",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"--fix",
+				"core",
+				"mcp_server",
+				"app.py",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run full suite final",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify complete suite",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify clean lint",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run recovery integration tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/integration/test_failure_recovery.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Compile DevFlow modules",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"compileall",
+				"-q",
+				"core",
+				"mcp_server",
+				"app.py",
+				"pages"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect failing fixture run",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/fixtures/repositories/failing_tests_project/tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify failing test recovery",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/integration/test_failure_recovery.py::test_failing_fixture_is_reported"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Retest failing fixture",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/integration/test_failure_recovery.py::test_failing_fixture_is_reported"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check controlled failure path",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/integration/test_failure_recovery.py::test_failing_fixture_is_reported"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final DevFlow test suite",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final DevFlow lint",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final lint after benchmark persistence",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final targeted tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/unit",
+				"tests/integration/test_mcp_stdio.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final complete suite after all changes",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test corrected report scoring",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"tests/integration/test_workflow.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Lint corrected report",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run final regression suite",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test report and UI changes",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Lint report and UI changes",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"pages",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Fix page import formatting",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"--fix",
+				"pages"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify final UI lint",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"pages",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify current lint",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"ruff",
+				"check",
+				"core",
+				"mcp_server",
+				"app.py",
+				"pages",
+				"tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify current sample tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q",
+				"sample_quality_project/tests"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify current full tests",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"pytest",
+				"-q"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify current compilation",
+			"type": "shell",
+			"command": "C:\\Users\\SAKSHI\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+			"args": [
+				"-m",
+				"compileall",
+				"-q",
+				"core",
+				"mcp_server",
+				"app.py",
+				"pages"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
