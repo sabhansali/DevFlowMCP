@@ -742,10 +742,10 @@ The following commands were executed in the current workspace:
 
 | Command | Observed result |
 |---|---|
-| `C:\Users\SAKSHI\AppData\Local\Programs\Python\Python313\python.exe -m pytest -q` | `14 passed in 9.27s` |
-| `C:\Users\SAKSHI\AppData\Local\Programs\Python\Python313\python.exe -m pytest -q sample_quality_project/tests` | `2 passed in 0.02s` |
-| `C:\Users\SAKSHI\AppData\Local\Programs\Python\Python313\python.exe -m ruff check core mcp_server app.py pages tests` | `All checks passed!` |
-| `C:\Users\SAKSHI\AppData\Local\Programs\Python\Python313\python.exe -m compileall -q core mcp_server app.py pages` | Completed successfully with no output |
+| `AppData\Local\Programs\Python\Python313\python.exe -m pytest -q` | `14 passed in 9.27s` |
+| `AppData\Local\Programs\Python\Python313\python.exe -m pytest -q sample_quality_project/tests` | `2 passed in 0.02s` |
+| `AppData\Local\Programs\Python\Python313\python.exe -m ruff check core mcp_server app.py pages tests` | `All checks passed!` |
+| `AppData\Local\Programs\Python\Python313\python.exe -m compileall -q core mcp_server app.py pages` | Completed successfully with no output |
 
 ### Test coverage represented by the current suite
 
