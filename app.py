@@ -12,6 +12,8 @@ from core.planner import build_plan
 from core.reporting import csv_report, json_report, markdown_report
 from core.supervisor import validate_plan
 from core.workflow_engine import WorkflowEngine
+from dotenv import load_dotenv
+load_dotenv()
 
 ROOT = Path(__file__).parent
 DEFAULT_PROJECT = str(ROOT / "sample_quality_project")
